@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Chart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <input #numChart placeholder="Number for Chart">
+  <input #lab placeholder="label">
+
+  <button (click)="numPush(numChart.value, lab.value)">Push Data</button>
+
+  <ion-card>
+    <ion-card-header>
+      Chart Bar
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #healthCanvas height=300></canvas>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

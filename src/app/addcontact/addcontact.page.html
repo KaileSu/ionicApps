@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add or Edit a Contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label> First Name</ion-label>
+      <ion-input type=”text” [(ngModel)]="contact.firstName" clearInput></ion-input> ​
+    </ion-item>
+
+    <ion-item>
+        <ion-label> Last Name</ion-label>
+        <ion-input type=”text” [(ngModel)]="contact.lastName" clearInput></ion-input> ​
+    </ion-item>
+
+      <ion-item>
+          <ion-label> Email</ion-label>
+          <ion-input type=”email” [(ngModel)]="contact.email" clearInput></ion-input> ​
+      </ion-item>
+  </ion-list>
+    
+    <ion-button expand=”full” (click)="closeModal()"> Done </ion-button> ​
+   
+</ion-content>

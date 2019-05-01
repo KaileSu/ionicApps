@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Welcome!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Login</h2>
+  <ion-list>
+    <ion-item>
+      <ion-col size='3'>
+          <input type="text"[(ngModel)]="username" 
+          name="username" placeholder="username" >
+      </ion-col>
+      <ion-col size='2'>
+        Username: {{username}} <ion-button color='danger' (click)="presentModal()">
+          Edit 
+        </ion-button>
+
+      </ion-col>
+    </ion-item>
+  
+    <ion-item>
+       <input type="password"placeholder="Password" >
+    </ion-item>
+1
+    <ion-item>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      <ion-label>Remain logged in</ion-label>
+    </ion-item>
+           
+  </ion-list>
+  <ion-button color="secondary" shape="round" size="large"
+   routerLink="/account">
+    Login <ion-icon name="log-in"></ion-icon>
+  </ion-button>
+
+  <ion-button color="secondary" shape="round" size="large"
+   (click)="incrementCounter()">
+    T4.2 
+  </ion-button>
+
+  <ion-button color="secondary" shape="round" size="large"
+   (click)="login()">
+    T4.3 
+  </ion-button>
+
+  <ion-button color="secondary" shape="round" size="large"
+   (click)="loginPassVar()">
+    T4.4
+  </ion-button>
+
+
+  <p>{{count}}</p>
+
+
+
+  
+</ion-content>
